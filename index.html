@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Insert Form Data into Database using AJAX and Django</title>
+  </head>
+  <body>
+    <form id="form">
+      {% csrf_token %}
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" /><br /><br />
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <!-- include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#form").submit(function (event) {
+          event.preventDefault(); // prevent the form from submitting
+
+          var name = $("#name").val();
+          var email = $("#email").val();
+
+          // make an AJAX request to the Django view
+          $.ajax({
+            url: "/insert-form-data/",
+            type: "POST",
+            data: {
+              name: name,
+              email: email,
+              csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
+            },
+            success: function (data) {
+              console.log(
+                "Form data was successfully inserted into the database"
+              );
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
