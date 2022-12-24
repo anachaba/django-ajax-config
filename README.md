@@ -17,5 +17,5 @@ head start copy and paste ajax implementation
 ### post models creation <br/>
 `python manage.py makemigrations` <br/>
 `python manage.py migrate` <br/>
-###create superadmin <br/>
+### create superadmin <br/>
 `python manage.py createsuperuser` <br/>
