@@ -1,8 +1,9 @@
 # django-ajax-config
 head start copy and paste ajax implementation
 
-### start <br/>
+### install django <br/>
 `pip install django==4.1.4`<br/>
+### start <br/>
 `django-admin startproject config .`<br/>
 `virtualenv env`<br/>
 ### set up powershell policies to allow venv <br/>
