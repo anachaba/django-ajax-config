@@ -8,7 +8,7 @@ head start copy and paste ajax implementation
 ### Activate env
 `path to /project name/venv/Scripts/Activate.ps1`<br/>
 
-###if env can't activate 
+### if env can't activate 
 
 ### set up powershell policies to allow venv <br/>
 `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force`<br/>
