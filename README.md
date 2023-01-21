@@ -4,7 +4,7 @@ head start copy and paste ajax implementation
 
 ### start <br/>
 `python -m venv venv`<br/>
-#### `virtualenv env`<br/>
+
 
 ### Activate env
 `path to /project name/venv/Scripts/Activate.ps1`<br/>
