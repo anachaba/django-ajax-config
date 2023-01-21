@@ -16,7 +16,11 @@ head start copy and paste ajax implementation
 
 ### install django <br/>
 `pip install django==4.1.4`<br/>
+### start project <br/>
 `django-admin startproject config .`<br/>
+
+### create app <br/>
+`python manage.py startapp app_name`
 
 ### Install Required libraries
 `pip install mssql-django`<br/>
