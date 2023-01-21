@@ -3,6 +3,7 @@ head start copy and paste ajax implementation
 
 
 ### start <br/>
+`python -m venv venv`<br/>
 `virtualenv env`<br/>
 
 ### Activate env
